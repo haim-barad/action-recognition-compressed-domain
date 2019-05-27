@@ -9,14 +9,14 @@ Under contruction, Update every single day.
 <li>torchvision
 <li>pillow
 <li>ffmpeg
-<li>opencv:  
+<li>opencv:<br/>
 >pip install opencv-python
 
 if the use of opencv returning an error, try:
 >apt-get update
 sudo apt-get install -y libsm6 libxext6 libxrender-dev
 
-<li>Coviar (use to extract the compressed representation)<\li>
+<li>Coviar
 Install using the instruction below:
 https://github.com/chaoyuaw/pytorch-coviar/blob/master/GETTING_STARTED.md
 comments:
