@@ -3,20 +3,20 @@ Code for submission of Neurips 2019 paper entitled "ARCDnet: Accelerating Action
 Under contruction, Update every single day.
 
 <h2>Requirements (further instruction will be added)</h2>
-*python3
-*pytorch1.0
-*torchvision
-*pillow
-*ffmpeg
-*opencv:
+<ol>
+<li>python3<\li>
+<li>pytorch1.0<\li>
+<li>torchvision<\li>
+<li>pillow<\li>
+<li>ffmpeg<\li>
+<li>opencv:<\li>
 >pip install opencv-python
 
 if the use of opencv returning an error, try:
 >apt-get update
-?sudo apt-get install -y libsm6 libxext6 libxrender-dev
+sudo apt-get install -y libsm6 libxext6 libxrender-dev
 
-
-Coviar (use to extract the compressed representation)
+<li>Coviar (use to extract the compressed representation)<\li>
 Install using the instruction below:
 https://github.com/chaoyuaw/pytorch-coviar/blob/master/GETTING_STARTED.md
 comments:
@@ -30,7 +30,7 @@ sudo apt-get install libavcodec-dev
 sudo apt-get install libavformat-dev
 sudo apt-get install libswscale-dev
 if you get an error:
-
+</ol>
 
 
 Datasets:
