@@ -12,11 +12,12 @@ Under contruction, Update every single day.
 <li>ffmpeg
 <li>opencv:<br/></ol>
 
->  pip install opencv-python 
+   >  pip install opencv-python 
 
 
 if the **use** of opencv returning an error, try:
 >apt-get update
+
 apt-get install -y libsm6 libxext6 libxrender-dev
 
 **Coviar:**   
