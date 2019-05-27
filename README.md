@@ -74,11 +74,12 @@ http://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/
 **Ucf101:**
 Download from:
 https://www.crcv.ucf.edu/data/UCF101.php
-1.video2jpeg using:
-  >python utils/video_jpg_ucf101_hmdb51.py avi_video_directory jpg_video_directory
 
-2.create a file that holds the number of frames:
->python utils/n_frames_ucf101_hmdb51.py jpg_video_directory
-3. Annotation you use the ready annotation file in the "annotation_dir".
+ 1. Video2jpeg using:
+     >python utils/video_jpg_ucf101_hmdb51.py avi_video_directory jpg_video_directory
+ 2. Create a file that holds the number of frames:
+	>python utils/n_frames_ucf101_hmdb51.py jpg_video_directory
+ 3. Annotation you use the ready annotation file in the "annotation_dir".
+
 
 This git used the structure and base code of:https://github.com/kenshohara/3D-ResNets-PyTorch and the extraction of compressed component using this git:https://github.com/chaoyuaw/pytorch-coviar, so a big thanks to both of those projects, they did a great work.
