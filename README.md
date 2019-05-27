@@ -2,17 +2,18 @@
 Code for submission of Neurips 2019 paper entitled "ARCDnet: Accelerating Action Recognition In The Compressed Domain"
 Under contruction, Update every single day.
 
-Requirements (further instruction will be added)
+<h2>Requirements (further instruction will be added)</h2>
 python3
-pytorch 1.0
+pytorch1.0
 torchvision
 pillow
 ffmpeg
 opencv:
-pip install opencv-python
+>pip install opencv-python
+
 if the use of opencv returning an error, try:
-apt-get update
-sudo apt-get install -y libsm6 libxext6 libxrender-dev
+>apt-get update
+?sudo apt-get install -y libsm6 libxext6 libxrender-dev
 
 
 Coviar (use to extract the compressed representation)
