@@ -1,3 +1,4 @@
+
 # ARCDnet: Action Recognition in the Compressed Domain
 Code for submission of Neurips 2019 paper entitled "ARCDnet: Accelerating Action Recognition In The Compressed Domain"
 Under contruction, Update every single day.
@@ -9,27 +10,32 @@ Under contruction, Update every single day.
 <li>torchvision
 <li>pillow
 <li>ffmpeg
-<li>opencv:<br/>
->pip install opencv-python
+<li>opencv:<br/></ol>
 
-if the use of opencv returning an error, try:
+>  pip install opencv-python 
+
+
+if the **use** of opencv returning an error, try:
 >apt-get update
-sudo apt-get install -y libsm6 libxext6 libxrender-dev
+apt-get install -y libsm6 libxext6 libxrender-dev
 
-<li>Coviar
+<li>Coviar   
+
 Install using the instruction below:
 https://github.com/chaoyuaw/pytorch-coviar/blob/master/GETTING_STARTED.md
+
 comments:
--If the make clean doesn't work, continue, don't give up.
--If you get errors in the last command, try install those libraries:
-sudo apt-get update
-sudo apt-get install libbz2-dev
-sudo apt-get install -y liblzma-dev
-sudo apt-get install libavutil-dev
-sudo apt-get install libavcodec-dev
-sudo apt-get install libavformat-dev
-sudo apt-get install libswscale-dev
-if you get an error:
+ - If the make clean doesn't work, continue, don't give up.
+ - If you get errors in the last command, try install those libraries:
+
+       > apt-get update 
+       > apt-get install libbz2-dev 
+       > apt-get install -y liblzma-dev 
+       > apt-get install libavutil-dev
+       >  apt-get install libavcodec-dev 
+       > apt-get install libavformat-dev
+       >  apt-get install libswscale-dev
+
 </ol>
 
 
