@@ -19,7 +19,7 @@ if the **use** of opencv returning an error, try:
 >apt-get update
 apt-get install -y libsm6 libxext6 libxrender-dev
 
-<li>Coviar   
+**Coviar:**   
 
 Install using the instruction below:
 https://github.com/chaoyuaw/pytorch-coviar/blob/master/GETTING_STARTED.md
@@ -39,8 +39,8 @@ comments:
 </ol>
 
 
-Datasets:
-Kinetics400:
+## Datasets:
+**Kinetics400:**
 Offical Crawler:https://github.com/activitynet/ActivityNet/tree/master/Crawler/Kinetics
 Another git if the first doesn't work:
 https://github.com/Showmax/kinetics-downloader
@@ -52,7 +52,7 @@ python utils/n_frames_kinetics.py jpg_video_directory
 python utils/kinetics_json.py train_csv_path val_csv_path test_csv_path dst_json_path
 other wise you can use the annotation file under "annotation_dir".
 
-Hmdb51:
+**Hmdb51:**
 Download from:
 http://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/
 1.video2jpeg using:
@@ -61,7 +61,7 @@ python utils/video_jpg_ucf101_hmdb51.py avi_video_directory jpg_video_directory
 python utils/n_frames_ucf101_hmdb51.py jpg_video_directory
 3. Annotation you use the ready annotation file in the "annotation_dir".
 
-Ucf101:
+**Ucf101:**
 Download from:
 https://www.crcv.ucf.edu/data/UCF101.php
 1.video2jpeg using:
