@@ -1,8 +1,7 @@
 
-# MFCD-Net: Action Recognition in the Compressed Domain
-Code for submission of Neurips 2019 paper entitled " MFCD-Net: Accelerating Action Recognition In The Compressed Domain"
-
-<h2>Under contruction, Update every single day.<\h2>
+# ARCDnet: Action Recognition in the Compressed Domain
+Code for submission of Neurips 2019 paper entitled "ARCDnet: Accelerating Action Recognition In The Compressed Domain"
+Under contruction, Update every single day.
 
 <h2>Requirements (further instruction will be added)</h2>
 <ol>
@@ -13,11 +12,11 @@ Code for submission of Neurips 2019 paper entitled " MFCD-Net: Accelerating Acti
 <li>ffmpeg
 <li>opencv:<br/></ol>
 
-   >  pip install opencv-python 
+>  pip install opencv-python 
 
 
 if the **use** of opencv returning an error, try:
->apt-get update  
+>apt-get update
 apt-get install -y libsm6 libxext6 libxrender-dev
 
 **Coviar:**   
@@ -29,29 +28,34 @@ comments:
  - If the make clean doesn't work, continue, don't give up.
  - If you get errors in the last command, try install those libraries:
 
-         apt-get update 
-         apt-get install libbz2-dev 
-         apt-get install -y liblzma-dev 
-         apt-get install libavutil-dev
-         apt-get install libavcodec-dev 
-         apt-get install libavformat-dev
-         apt-get install libswscale-dev
+       > apt-get update 
+       > apt-get install libbz2-dev 
+       > apt-get install -y liblzma-dev 
+       > apt-get install libavutil-dev
+       >  apt-get install libavcodec-dev 
+       > apt-get install libavformat-dev
+       >  apt-get install libswscale-dev
 
 </ol>
 
 
 ## Datasets:
 **Kinetics400:**
-Offical Crawler:https://github.com/activitynet/ActivityNet/tree/master/Crawler/Kinetics
+Download from the offical Crawler:
+https://github.com/activitynet/ActivityNet/tree/master/Crawler/Kinetics
 Another git if the first doesn't work:
 https://github.com/Showmax/kinetics-downloader
+
 1.video2jpeg using:
-python utils/video_jpg_kinetics.py avi_video_directory jpg_video_directory
+  >python utils/video_jpg_kinetics.py avi_video_directory jpg_video_directory
+
 2.create a file that holds the number of frames:
-python utils/n_frames_kinetics.py jpg_video_directory
-3. If you download through the official crawler you can get the annotation using this command:
-python utils/kinetics_json.py train_csv_path val_csv_path test_csv_path dst_json_path
-other wise you can use the annotation file under "annotation_dir".
+  >python utils/n_frames_kinetics.py jpg_video_directory
+
+3. If you download through the official crawler you can get the annotation using this   command:
+>python utils/kinetics_json.py train_csv_path val_csv_path test_csv_path dst_json_path
+
+otherwise you can use the annotation file under "annotation_dir".
 
 **Hmdb51:**
 Download from:
@@ -66,9 +70,10 @@ python utils/n_frames_ucf101_hmdb51.py jpg_video_directory
 Download from:
 https://www.crcv.ucf.edu/data/UCF101.php
 1.video2jpeg using:
-python utils/video_jpg_ucf101_hmdb51.py avi_video_directory jpg_video_directory
+  >python utils/video_jpg_ucf101_hmdb51.py avi_video_directory jpg_video_directory
+
 2.create a file that holds the number of frames:
-python utils/n_frames_ucf101_hmdb51.py jpg_video_directory
+  >python utils/n_frames_ucf101_hmdb51.py jpg_video_directory
 3. Annotation you use the ready annotation file in the "annotation_dir".
 
 
