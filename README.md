@@ -28,13 +28,13 @@ comments:
  - If the make clean doesn't work, continue, don't give up.
  - If you get errors in the last command, try install those libraries:
 
-       > apt-get update 
-       > apt-get install libbz2-dev 
-       > apt-get install -y liblzma-dev 
-       > apt-get install libavutil-dev
-       >  apt-get install libavcodec-dev 
-       > apt-get install libavformat-dev
-       >  apt-get install libswscale-dev
+         apt-get update 
+         apt-get install libbz2-dev 
+         apt-get install -y liblzma-dev 
+         apt-get install libavutil-dev
+         apt-get install libavcodec-dev 
+         apt-get install libavformat-dev
+         apt-get install libswscale-dev
 
 </ol>
 
