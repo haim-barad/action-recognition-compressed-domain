@@ -16,8 +16,7 @@ Under contruction, Update every single day.
 
 
 if the **use** of opencv returning an error, try:
->apt-get update
-
+>apt-get update  
 apt-get install -y libsm6 libxext6 libxrender-dev
 
 **Coviar:**   
