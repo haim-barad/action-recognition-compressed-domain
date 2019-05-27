@@ -4,12 +4,12 @@ Under contruction, Update every single day.
 
 <h2>Requirements (further instruction will be added)</h2>
 <ol>
-<li>python3<\li>
-<li>pytorch1.0<\li>
-<li>torchvision<\li>
-<li>pillow<\li>
-<li>ffmpeg<\li>
-<li>opencv:<\li>
+<li>python3
+<li>pytorch1.0
+<li>torchvision
+<li>pillow
+<li>ffmpeg
+<li>opencv:  
 >pip install opencv-python
 
 if the use of opencv returning an error, try:
