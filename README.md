@@ -82,4 +82,27 @@ https://www.crcv.ucf.edu/data/UCF101.php
  3. Annotation you use the ready annotation file in the "annotation_dir".
 
 
-This git used the structure and base code of:https://github.com/kenshohara/3D-ResNets-PyTorch and the extraction of compressed component using this git:https://github.com/chaoyuaw/pytorch-coviar, so a big thanks to both of those projects, they did a great work.
+This git used the structure and base code of:https://github.com/kenshohara/3D-ResNets-PyTorch and the extraction of compressed component using this git:https://github.com/chaoyuaw/pytorch-coviar,
+so a big thanks to both of those projects, they did a great work and their citation information is below.
+
+## Citations:
+If you find this model useful for your resesarch, please use the following BibTeX entries.
+
+```
+@inproceedings{wu2018coviar,
+  title={Compressed Video Action Recognition},
+  author={Wu, Chao-Yuan and Zaheer, Manzil and Hu, Hexiang and Manmatha, R and Smola, Alexander J and Kr{\"a}henb{\"u}hl, Philipp},
+  booktitle={CVPR},
+  year={2018}
+}
+```
+and
+```
+@inproceedings{hara3dcnns,
+  author={Kensho Hara and Hirokatsu Kataoka and Yutaka Satoh},
+  title={Can Spatiotemporal 3D CNNs Retrace the History of 2D CNNs and ImageNet?},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages={6546--6555},
+  year={2018},
+}
+```
