@@ -1,5 +1,6 @@
 
 
+
 # MFCD-Net: Action Recognition in the Compressed Domain
 Code for submission of Neurips 2019 paper entitled "MFCD-Net: Accelerating Action Recognition In The Compressed Domain"
 
@@ -81,10 +82,29 @@ https://www.crcv.ucf.edu/data/UCF101.php
  2. Create a file that holds the number of frames:
 	>python utils/n_frames_ucf101_hmdb51.py jpg_video_directory
  3. Annotation you use the ready annotation file in the "annotation_dir".
+## Extractign Compressed Representation Data
 
 
+## Run
+### Train
+**Final goal**: having MFCD-Net running in the compressed domain on HMDB51 datatset
+
+ 1. Download weights of MultiFiberNet model pretrain on kinetics from:[https://github.com/cypw/PyTorch-MFNet](https://github.com/cypw/PyTorch-MFNet)
+ 2. Finetune the model on hmdb51 on the uncompressed domain , while using 12 frames and not 16 as the original model.
+ 
+
+> python main.py  --model mfnet --sample_size 224 --sample_duration 12 
+> --batch_size <batch_size> --jpeg_path <jpeg_path>  --mfnet_st --annotation_path annotation_dir/hmdb51/hmdb51_1.json --pretrain_path  path/MFNet3D_Kinetics-400_72.8.pth --dataset hmdb51 --n_classes 51 --learning_rate 0.005 --weight_decay 0.001 --result_path standard_12frames_results_hmdb51
+ --n_epochs <number_of_epochs>
+
+3.	Finetune the model on hmdb51 on the compressed domain 
+
+>  python main.py  --model mfnet --sample_size 224 --sample_duration 12 --batch_size <batch_size> --jpeg_path <jpeg_path>  --mfnet_st --annotation_path annotation_dir/hmdb51/hmdb51_1.json --pretrain_path standard_12frames_results/<weights_name>.pth  --dataset hmdb51 --n_classes 51 --learning_rate 0.005 --weight_decay 0.001 --result_path mfcdnet_results_hmdb51 --n_epochs <number_of_epochs> --compressed --iframe_path <iframe_directory_path> --residual_path <residual_directory_path> 
+
+ 
+ 
 This git used the structure and base code of:https://github.com/kenshohara/3D-ResNets-PyTorch and the extraction of compressed component using this git:https://github.com/chaoyuaw/pytorch-coviar,
-so a big thanks to both of those projects, they did a great work and their citation information is below.
+A big thanks to both of those projects, they did a great work and their citation information is below.
 
 Citation of the paper which we used their gits:
 ```
@@ -105,3 +125,4 @@ and
   year={2018},
 }
 ```
+
