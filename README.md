@@ -85,9 +85,7 @@ https://www.crcv.ucf.edu/data/UCF101.php
 This git used the structure and base code of:https://github.com/kenshohara/3D-ResNets-PyTorch and the extraction of compressed component using this git:https://github.com/chaoyuaw/pytorch-coviar,
 so a big thanks to both of those projects, they did a great work and their citation information is below.
 
-## Citations:
-If you find this model useful for your resesarch, please use the following BibTeX entries.
-
+Citation of the paper which we used their gits:
 ```
 @inproceedings{wu2018coviar,
   title={Compressed Video Action Recognition},
