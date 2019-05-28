@@ -102,7 +102,7 @@ https://www.crcv.ucf.edu/data/UCF101.php
 >  python main.py  --model mfnet --sample_size 224 --sample_duration 12 --batch_size <batch_size> --jpeg_path <jpeg_path>  --mfnet_st --annotation_path annotation_dir/hmdb51/hmdb51_1.json --pretrain_path standard_12frames_results/<weights_name>.pth  --dataset hmdb51 --n_classes 51 --learning_rate 0.005 --weight_decay 0.001 --result_path mfcdnet_results_hmdb51 --n_epochs <number_of_epochs> --compressed --iframe_path <iframe_directory_path> --residual_path <residual_directory_path> 
 
  
- 
+ ## Refernces
 This git used the structure and base code of:https://github.com/kenshohara/3D-ResNets-PyTorch and the extraction of compressed component using this git:https://github.com/chaoyuaw/pytorch-coviar,
 A big thanks to both of those projects, they did a great work and their citation information is below.
 
